@@ -17,11 +17,18 @@ main {
     background-color: #ffffff;
     border-color: #dddddd;
 }
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
-    
+
 }
 
 /* Style the links inside the navigation bar */
@@ -56,62 +63,62 @@ form {
     border: 1px solid #CCC;
     border-radius: 1em;
   }
-  
+
   form div + div {
     margin-top: 1em;
   }
-  
+
   label {
     /* To make sure that all labels have the same size and are properly aligned */
     display: inline-block;
     width: 90px;
     text-align: right;
   }
-  
+
   input, textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
     font: 1em sans-serif;
-  
+
     /* To give the same size to all text fields */
     width: 300px;
     box-sizing: border-box;
-  
+
     /* To harmonize the look & feel of text field border */
     border: 1px solid #999;
   }
-  
+
   input:focus, textarea:focus {
     /* To give a little highlight on active elements */
     border-color: #000;
   }
-  
+
   textarea {
     /* To properly align multiline text fields with their labels */
     vertical-align: top;
-  
+
     /* To give enough room to type some text */
     height: 5em;
   }
-  
+
   .button {
     /* To position the buttons to the same position of the text fields */
     padding-left: 90px; /* same size as the label elements */
   }
-  
+
   /* footer */
 
 html {
     height: 100%;
     box-sizing: border-box;
   }
-  
+
   *,
   *:before,
   *:after {
     box-sizing: inherit;
   }
-  
+
   body {
     position: relative;
     margin: 0;
@@ -119,29 +126,29 @@ html {
     min-height: 100%;
     font-family: "Helvetica Neue", Arial, sans-serif;
   }
-  
+
   .demo {
     margin: 0 auto;
     padding-top: 64px;
     max-width: 640px;
     width: 94%;
   }
-  
+
   .demo h1 {
     margin-top: 0;
   }
-  
+
   /**
    * Footer Styles
    */
-  
+
   .footer {
-    width: 960px;
+    width: auto;
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    padding: auto;
     background-color: #666666;
     text-align: center;
   }
