@@ -18,6 +18,12 @@ main {
     border-color: #dddddd;
 }
 
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 .container {
   display: block;
   margin-left: auto;
@@ -151,4 +157,41 @@ html {
     padding: auto;
     background-color: #666666;
     text-align: center;
+  }
+
+  /* responsive code */
+  .example {
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: auto;
+    color: white;
+}
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+      .example {background: DarkSlateGrey;}
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+      .example {background: DarkBlue;}
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+      .example {background: Maroon;}
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+      .example {background: DarkGreen;}
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+      .example {background: black;}
   }
